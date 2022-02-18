@@ -12,3 +12,6 @@
 3) Create 2 repository secrets in your GitHub repository: AWS_ACCESS_KEY and AWS_SECRET_KEY of the IAM user newly created
 
 ## Overview
+![Deployment](/misc/docker_single_container_deployment.jpg) 
+
+![Pipeline](/misc/docker_single_container_deployment_pipeline.jpg) 
