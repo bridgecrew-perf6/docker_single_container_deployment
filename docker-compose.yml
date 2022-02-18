@@ -1,19 +1,8 @@
+# Used by AWS EBS to build the single container application
 services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
-    volumes:
-      - /usr/src/app/node_modules
-      - .:/usr/src/app
-  # Extra service for live tests execution
-  tests:
-    build: 
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - /usr/src/app/node_modules
-      - .:/usr/src/app 
-    command: ["npm", "run", "test" ]
+      - "80:80"
